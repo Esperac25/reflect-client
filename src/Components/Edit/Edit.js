@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import config from '../../config';
 import Context from '../../Context';
 import TokenService from '../../services/token-service';
-import reflectImg from '../../reflectImg'
+import reflectImg from '../../reflectImg.png'
 
 export default class Edit extends Component{
     static contextType = Context;
@@ -24,7 +24,7 @@ export default class Edit extends Component{
     handleChange(e){
         console.log(e.target.value);
         this.setState({
-            newReflection: {...this.state.newReflection, dateCreated: new Date() , [e.target.name]: e.target.value },
+            newReflection: {...this.state.newReflection, datecreated: new Date() , [e.target.name]: e.target.value },
         });
     }
 

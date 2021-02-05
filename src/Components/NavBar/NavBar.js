@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import TokenService from '../../services/token-service';
 import Context from '../../Context';
-import './Nav.css';
+
 
 export default class NavBar extends Component{
     static contextType = Context;
@@ -35,6 +35,9 @@ export default class NavBar extends Component{
                         <li>
                             <Link to='/reflections/add'>+Reflection</Link>
                         </li>
+                        <li>
+                            <Link to='/reflections'>Reflections</Link>
+                        </li>
                         </>
                     ): (
                         <>
@@ -45,7 +48,7 @@ export default class NavBar extends Component{
                             <Link to='/login'>Login</Link>
                         </li>
                         <li>
-                            <Link to='/sign-up'>Sign Up</Link>
+                            <Link to='/signup'>Sign Up</Link>
                         </li>
                         </>
                     )}

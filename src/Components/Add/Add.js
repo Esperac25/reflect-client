@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import config from '../../config';
 import Context from '../../Context';
 import TokenService from '../../services/token-service';
-import reflectImg from '../../reflectImg';
+import reflectImg from '../../reflectImg.png';
 
 export default class Add extends Component{
     static contextType = Context;
@@ -14,7 +14,7 @@ export default class Add extends Component{
 
     handleChange(e){
         this.setState({ 
-            newReflection: {...this.state.newReflection, dateCreated: new Date(), [e.target.name]: e.target.value},
+            newReflection: {...this.state.newReflection, datecreated: new Date(), [e.target.name]: e.target.value},
         })
     }
     handleCancel = () => {
@@ -43,7 +43,7 @@ export default class Add extends Component{
             this.props.history.push('/reflections')
         })
         .catch((e) => {
-            this.state({ error: e.message });
+            this.setState({ error: e.message });
         });
     };
 
@@ -58,6 +58,7 @@ export default class Add extends Component{
                 <label>Title</label>
                 <input type='text' name='title' onChange={(e) => this.handleChange(e)} required />
                 <img src={pic} alt='reflect entry'/>
+                <label>Add a picture</label>
                 <input name='image_url' type='text' onChange={(e) => this.handleChange(e)}/>
                 <label>Description</label>
                 <p>What was the main take away from today?</p>

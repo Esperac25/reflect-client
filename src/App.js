@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import config from '../config';
-import NavBar from '../Components/NavBar/NavBar';
-import Login from '../Components/Login/Login';
-import SignUp from '../Components/SignUp/SignUp';
-import LandingPage from '../Components/LandingPage/LandingPage';
-import Add from '../Components/Add/Add';
-import Edit from '../Components/Edit/Edit';
-import Home from '../Components/Home/Home';
-import Context from '../Context';
-import ReflectionList from '../Componenents/ReflectionList/ReflectionList';
-import PrivateRoute from '../Utils/PrivateRoute';
-import TokenService from '../services/token-service';
+import config from './config';
+import NavBar from './Components/NavBar/NavBar';
+import Login from './Components/Login/Login';
+import SignUp from './Components/SignUp/SignUp';
+import LandingPage from './Components/LandingPage/LandingPage';
+import Add from './Components/Add/Add';
+import Edit from './Components/Edit/Edit';
+import Home from './Components/Home/Home';
+import About from './Components/About/About';
+import Context from './Context';
+import ReflectionList from './Components/ReflectionList/ReflectionList';
+import PrivateRoute from './Utils/PrivateRoute';
+import TokenService from './services/token-service';
 
 export default class App extends Component{
   state = {
@@ -68,13 +69,14 @@ export default class App extends Component{
         <div>
           <Route path='/' component={NavBar}/>
           <Route exact path='/' component={LandingPage}/>
+          <Route path='/about' component={About}/>
           <Route path='/signup' component={SignUp}/>
           <Route path='/login' component={Login}/>
           <div>
             <PrivateRoute path='/reflections/add' component={Add}/>
             <PrivateRoute path='/edit/:id' component={Edit}/>
             <PrivateRoute path='/home' component={Home}/>
-            <PrivateRoute path='/reflections' component={ReflectionList}/>
+            <PrivateRoute exact path='/reflections' component={ReflectionList}/>
           </div>
           <footer>Copyright © 2021 Reflect</footer>
         </div>
