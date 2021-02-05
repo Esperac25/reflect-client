@@ -33,9 +33,10 @@ export default class ReflectionList extends Component{
         const reflections = this.filterReflections();
 
         return(
-            <section>
+            <section className='h-box'>
                 <h2>You have {this.context.reflections.length} reflections</h2>
                 <section>
+                    <form className='search-form'>
                     <input type='text' id='search-term' placeholder='search by title' onChange={(e) => this.setFilter('title', e.target.value)}/>
                     <select onChange={(e) => this.setFilter('dateCreated', e.target.value)}>
                         <option value='all'>Date</option>
@@ -47,6 +48,8 @@ export default class ReflectionList extends Component{
                             )
                         )}
                     </select>
+                    <button type='submit'>Search</button>
+                    </form>
                 </section>
                 <section>
                     <h2>Reflections</h2>

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import AuthAPIService from '../../services/auth-api-service';
 import Context from '../../Context';
 import TokenService from '../../services/token-service';
+import Demo from '../Demo/Demo'
+import './Login.css';
 
 export default class SignUp extends Component{
     static contextType = Context;
@@ -28,20 +30,19 @@ export default class SignUp extends Component{
 
     render(){
         return(
-            <form className='' onSubmit={this.handleLogin}>
+            <form className='form' onSubmit={this.handleLogin}>
                 {this.state.error && <p className='error'>{this.state.error}</p>}
-                <div>
-                    <h2>To view a demo input the credentials below</h2>
-                    <h3>Email</h3>
-                    <p>demo@demo.com</p>
-                    <h3>Password</h3>
-                    <p>Demo!1234</p>
-                </div>
+                <Demo />
                 <h1>Login</h1>
-                <label>Email: </label>
+                <label htmlFor='email'>Email: </label>
+                <br></br>
                 <input type='email' name='email' required/>
-                <label>Password: </label>
+                <br></br>
+                <label htmlFor='password'>Password: </label>
+                <br></br>
                 <input id='password' type='password' name='password' onChange={(e) => console.log(e)} required/>
+                <br></br>
+                <br></br>
                 <button type='submit'>
                     Login
                 </button>

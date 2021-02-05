@@ -13,6 +13,7 @@ import Context from './Context';
 import ReflectionList from './Components/ReflectionList/ReflectionList';
 import PrivateRoute from './Utils/PrivateRoute';
 import TokenService from './services/token-service';
+import './App.css';
 
 export default class App extends Component{
   state = {
@@ -78,7 +79,7 @@ export default class App extends Component{
             <PrivateRoute path='/home' component={Home}/>
             <PrivateRoute exact path='/reflections' component={ReflectionList}/>
           </div>
-          <footer>Copyright © 2021 Reflect</footer>
+          {/* <footer>Copyright © 2021 Reflect</footer> */}
         </div>
       </Context.Provider>
     )

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import TokenService from '../../services/token-service';
 import Context from '../../Context';
-import reflectImg from '../../reflectImg.png'
+import reflectImg2 from '../../reflectImg2.png'
 import './NavBar.css';
 
 export default class NavBar extends Component{
@@ -18,38 +18,39 @@ export default class NavBar extends Component{
         return(
             <header>
             <h1>
-                <Link to='/'><img className='nav-img' src={reflectImg} alt='reflect' /></Link>
+                <Link to='/'><img className='nav-img' src={reflectImg2} alt='reflect' /></Link>
             </h1>
             <nav>
                 <ul>
                     {TokenService.hasAuthToken() ? (
                         <>
                         <li><a
+                             className='link'
                              href='/logout'
                              aria-label='logout'
                              type='submit'
                              onClick={(e) => this.logout(e)}>Logout</a>
                         </li>
                         <li>
-                            <Link to='/home'>Home</Link>
+                            <Link className='link' to='/home'>Home</Link>
                         </li>
                         <li>
-                            <Link to='/reflections/add'>+Reflection</Link>
+                            <Link className='link' to='/reflections/add'>+ New</Link>
                         </li>
                         <li>
-                            <Link to='/reflections'>Reflections</Link>
+                            <Link className='link' to='/reflections'>Reflections</Link>
                         </li>
                         </>
                     ): (
                         <>
                         <li>
-                            <Link to='/about'>About</Link>
+                            <Link className='link' to='/about'>About</Link>
                         </li>
                         <li>
-                            <Link to='/login'>Login</Link>
+                            <Link className='link' to='/login'>Login</Link>
                         </li>
                         <li>
-                            <Link to='/signup'>Sign Up</Link>
+                            <Link className='link' to='/signup'>Sign Up</Link>
                         </li>
                         </>
                     )}

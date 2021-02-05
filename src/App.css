@@ -1,41 +1,69 @@
 .App {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  
+	display: flex;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
+button{
+  border-radius: 7px;
+  border-color: rgb(15, 97, 97);
+  font-size: 18px;
+  font-family: 'Delius';
+  color: white;
+  background-color: rgb(15, 97, 97);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.search-form input{
+  width: 200px;
+  height: 30px;
+}
+
+.search-form select{
+  width: 200px;
+  height: 50px;
+}
+@media all and (min-width: 700px){
+  button{
+    font-size: 25px;
+    width: 200px;
+    margin-bottom: 10px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .search-form input{
+    width: 200px;
+    height: 30px;
+  }
+  
+  .search-form select{
+    width: 200px;
+    height: 50px;
   }
 }

@@ -28,15 +28,22 @@ export default class SignUp extends Component{
 
     render(){
         return(
-            <form className='' onSubmit={this.handleSubmit}>
+            <form className='form' onSubmit={this.handleSubmit}>
                 {this.state.error && <p className='error'>{this.state.error}</p>}
                 <h1>Sign Up</h1>
-                <label>Email: </label>
+                <label htmlFor='email'>Email: </label>
+                <br></br>
                 <input type='email' name='email' required/>
-                <label>Password: </label>
+                <br></br>
+                <label htmlFor='password'>Password: </label>
+                <br></br>
                 <input type='password' name='password' required/>
-                <label>Confirm Password</label>
+                <br></br>
+                <label htmlFor='confirmPassword'>Confirm Password:</label>
+                <br></br>
                 <input type='password' name='confirmPassword' required/>
+                <br></br>
+                <br></br>
                 <button type='submit'>
                     Sign Up
                 </button>

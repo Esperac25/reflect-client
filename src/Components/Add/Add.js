@@ -3,6 +3,7 @@ import config from '../../config';
 import Context from '../../Context';
 import TokenService from '../../services/token-service';
 import reflectImg from '../../reflectImg.png';
+import './Add.css';
 
 export default class Add extends Component{
     static contextType = Context;
@@ -51,27 +52,41 @@ export default class Add extends Component{
         const { error } = this.state;
         let pic = (this.state.image_url) ? this.state.image_url : reflectImg;
         return (
-            <section>
+            <section className='add-form'>
                 <h2>Add a new Reflection</h2>
                 <form onSubmit={(e) => this.handleSubmit(e)}>
                 {error && <p className="error">{error}</p>}
-                <label>Title</label>
-                <input type='text' name='title' onChange={(e) => this.handleChange(e)} required />
-                <img src={pic} alt='reflect entry'/>
-                <label>Add a picture</label>
-                <input name='image_url' type='text' onChange={(e) => this.handleChange(e)}/>
-                <label>Description</label>
+                <label htmlFor='title'>Title:</label>
+                <br></br>
+                <input className='input' type='text' name='title' onChange={(e) => this.handleChange(e)} required />
+                <br></br>
+                <br></br>
+                <img className='pic' src={pic} alt='reflect entry'/>
+                <br></br>
+                <label htmlFor='image_url'>Add a picture:</label>
+                <br></br>
+                <input className='input' name='image_url' type='text' onChange={(e) => this.handleChange(e)}/>
+                <br></br>
+                <br></br>
+                <label htmlFor='description'>Description:</label>
                 <p>What was the main take away from today?</p>
-                <input type='text' name='description' onChange={(e) => this.handleChange(e)} required/>
-                <label>Feeling</label>
+                <input className='input' type='text' name='description' onChange={(e) => this.handleChange(e)} required/>
+                <br></br>
+                <br></br>
+                <label htmlFor='feeling'>Feeling:</label>
                 <p>What feelings did you experience today?</p>
-                <input type='text' name='feeling' onChange={(e) => this.handleChange(e)} required/>
-                <label>Time to Reflect</label>
-                <input type='text' name='content' onChange={(e) => this.handleChange(e)} required/>
+                <input className='input' type='text' name='feeling' onChange={(e) => this.handleChange(e)} required/>
+                <br></br>
+                <br></br>
+                <label htmlFor='content'>Time to Reflect:</label>
+                <br></br>
+                <input className='input-large' type='text' name='content' onChange={(e) => this.handleChange(e)} required/>
+                <br></br>
                 <button type='submit' onClick={this.handleCancel}>
                     Cancel
                 </button>
-                <button type='submit'>Add Reflection</button>
+                <br></br>
+                <button type='submit'>Save</button>
                 </form>
             </section>
         )
