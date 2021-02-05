@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import TokenService from '../../services/token-service';
 import Context from '../../Context';
-
+import reflectImg from '../../reflectImg.png'
+import './NavBar.css';
 
 export default class NavBar extends Component{
     static contextType = Context;
@@ -17,7 +18,7 @@ export default class NavBar extends Component{
         return(
             <header>
             <h1>
-                <Link to='/'>Reflect</Link>
+                <Link to='/'><img className='nav-img' src={reflectImg} alt='reflect' /></Link>
             </h1>
             <nav>
                 <ul>

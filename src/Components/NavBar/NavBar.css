@@ -1,0 +1,14 @@
+.nav-img{
+    width: 50%;
+    height: 50%;
+}
+.nav-img:after{
+    content: '';
+    opacity: 0.5;
+}
+ul{
+    list-style-type: none;
+}
+nav{
+    margin-right: 35px;
+}
