@@ -9,7 +9,7 @@ export default class Add extends Component{
     state = {
         error: null,
         newReflection: {},
-
+        datecreated: '',
     };
 
     handleChange(e){
