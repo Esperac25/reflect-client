@@ -6,6 +6,8 @@
 .nav-img:after{
     content: '';
     opacity: 0.3;
+    position: fixed;
+    top: 0;
 }
 ul{
     list-style-type: none;
@@ -25,19 +27,21 @@ nav{
         width: 200px;
         height: 200px;
         float: left;
-        margin-left: 100px;
-        margin-top: 20px;
+        margin-left: 50px;
+        margin-top: 10px;
     }
     ul{
         float: right;
         display: flex;
         justify-content: 'space-between';
-        margin-top: 100px;
-        margin-right: 100px;
-        
+        margin-top: 50px;
+        margin-right: 50px;
+        margin-bottom: 100px;
+        position: relative;
     }
     .link{
         margin-left: 30px;
         font-size: 35px;
     }
+    
 }

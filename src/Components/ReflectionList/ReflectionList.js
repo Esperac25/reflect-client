@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Context from '../../Context';
-import Reflection from '../Reflection/Reflection';
+import moment from 'moment';
+import ReflectionTile from '../ReflectionTile/ReflectionTile';
+import './ReflectionList.css'
 
 export default class ReflectionList extends Component{
     static contextType = Context;
@@ -30,12 +32,13 @@ export default class ReflectionList extends Component{
     };
 
     render(){
-        const reflections = this.filterReflections();
+        // let reflections = this.filterReflections();
+        
 
         return(
-            <section className='h-box'>
-                <h2>You have {this.context.reflections.length} reflections</h2>
-                <section>
+            <section className='reflection-box'>
+                <h2 className='dash-h2'>You have {this.context.reflections.length} reflections</h2>
+                {/* <section>
                     <form className='search-form'>
                     <input type='text' id='search-term' placeholder='search by title' onChange={(e) => this.setFilter('title', e.target.value)}/>
                     <select onChange={(e) => this.setFilter('dateCreated', e.target.value)}>
@@ -50,18 +53,22 @@ export default class ReflectionList extends Component{
                     </select>
                     <button type='submit'>Search</button>
                     </form>
-                </section>
+                </section> */}
                 <section>
-                    <h2>Reflections</h2>
-                    <ul>
-                        {reflections.map((reflection) => (
-                            <Reflection
+                    <ul className='reflection-list'>
+                        {this.context.reflections.map((reflection) => (
+                            <li>
+                            <ReflectionTile
                                 key={reflection.id}
-                                {...reflection}
-                                deleteReflection={this.context.deleteReflection}
-                                {...this.props}
+                                id={reflection.id}
+                                title={reflection.title}
+                                image_url={reflection.image_url}
+                                description={reflection.description}
+                                dateCreated={moment(reflection.dateCreated).calendar()}
                             />
+                            </li>
                         ))}
+                        <br></br>
                     </ul>
                 </section>
             </section>

@@ -1,0 +1,10 @@
+.input-large2 {
+	width: 75%;
+    height: 300px;
+    font-family: 'Delius';
+	border-radius: 10px;
+	font-size: 15px;
+	padding-top: 0;
+	padding-left: 0;
+	line-height: 1em;
+}

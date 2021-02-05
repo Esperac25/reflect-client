@@ -1,0 +1,9 @@
+input{
+    font-family: 'Delius';
+}
+
+@media all and (min-width: 700px){
+    input{
+        font-size: 15px;
+    }
+}

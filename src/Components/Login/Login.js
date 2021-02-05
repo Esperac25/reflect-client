@@ -32,7 +32,7 @@ export default class SignUp extends Component{
         return(
             <form className='form' onSubmit={this.handleLogin}>
                 {this.state.error && <p className='error'>{this.state.error}</p>}
-                <Demo />
+                <Demo history={this.props.history}/>
                 <h1>Login</h1>
                 <label htmlFor='email'>Email: </label>
                 <br></br>

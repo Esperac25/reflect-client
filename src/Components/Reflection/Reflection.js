@@ -3,41 +3,30 @@ import { Link } from 'react-router-dom';
 import Context from '../../Context';
 import moment from 'moment';
 import Delete from '../Delete/Delete';
+import './Reflection.css';
+import reflectImg from '../../reflectImg.png'
 
 
 export default class Reflection extends Component{
     static contextType = Context;
-    state = {
-        opened: false,
-    };
-
+    
     
     render(){
-        const { 
-            title,
-            image_url,
-            description,
-            feeling,
-            content,
-            dateCreated,
-        } = this.props;
-
+        console.log(this.props)
+        let image = this.props.image_url ? this.props.image_url : reflectImg;
         return(
             <li key={this.props.id}>
-                <div onClick={() => this.setState({ opened: !this.state.opened })}>
-                    <section>
-                        <h2>{title}</h2>
-                        <img src={image_url} alt='reflect entry'/>
-                        <p>{description}</p>
-                        <span>
-                            {moment(dateCreated).calendar()}
+                <div className='reflection'>
+                        <h2>{this.props.title}</h2>
+                        <img src={image} alt='reflect entry'/>
+                        <span className='date'>
+                            {moment(this.props.dateCreated).calendar()}
                         </span>
-                    </section>
-                    {this.state.opened && (
+                        <p>"{this.props.description}"</p>
                         <section>
                             <div>
-                                <p>{feeling}</p>
-                                <p>{content}</p>
+                                <p>I am feeling:</p><p>"{this.props.feeling}"</p>
+                                <p>{this.props.content}</p>
                             </div>
                             <Link to={`/edit/${this.props.id}`}>
                                 <button>Edit</button>
@@ -47,7 +36,7 @@ export default class Reflection extends Component{
                                     history={this.props.history}
                             />
                         </section>
-                    )}
+                    
                 </div>
             </li>
         )

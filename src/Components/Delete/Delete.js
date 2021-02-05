@@ -11,7 +11,10 @@ export default class Delete extends Component{
         const id = this.props.id;
         fetch(`${config.API_BASE_URL}/reflections/${id}`, {
             method: 'DELETE',
+            headers: {
+                "content-type": "application/json",
             authorization: `Bearer ${TokenService.getAuthToken()}`,
+            }
         }).then((res) =>{
             if(!res.ok){
                 throw new Error('An error occurred, please try again later')

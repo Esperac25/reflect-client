@@ -1,40 +1,57 @@
-.pic{
-    width: 50%;
-    height: 50%;
-    border-radius: 10px;
+.pic {
+	width: 50%;
+	height: 50%;
+	border-radius: 10px;
 }
-label{
-    font-size: 20px;
+label {
+	font-size: 30px;
 }
-.input{
-    width: 50%;
+.input {
+	width: 50%;
     height: 20px;
+    font-family: 'Delius';
 }
-.input-large{
-    width: 75%;
+.input-large {
+	width: 75%;
     height: 300px;
-
+    font-family: 'Delius';
+	border-radius: 10px;
+	font-size: 15px;
+	padding-top: 0;
+	padding-left: 0;
+	line-height: 1em;
 }
 
-.add-form{
-        border-radius: 10px;
-        background-color: rgba(255, 255, 255, 0.336);
-        font-weight: bold;
-        color: teal;
-        text-shadow: 1px 1px black;
+
+.add-form {
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.336);
+	font-weight: bold;
+	color: rgba(90, 238, 70, 0.747);
+	text-shadow: 2px 2px rgb(0, 0, 0);
+}
+.add-form h2{
+	color: white;
+	padding-top: 10px;
+}
+.add-form p{
+    color: rgb(245, 245, 245);
+    font-size: 20px;
+    text-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
 }
 
-@media all and (min-width: 700px){
-    .add-form{
-        float: right;
-        margin-top: 250px;
-        margin-right: -180px;
-        width: 670px;
-        height: 100%;
-        font-size: 25px;
-        margin-bottom: 100px;
-    }
-    label{
-        font-size: 30px;
-    }
+@media all and (min-width: 700px) {
+	.add-form {
+		float: right;
+		margin-top: 250px;
+		margin-right: -100px;
+		width: 670px;
+		height: 100%;
+		font-size: 25px;
+		margin-bottom: 100px;
+	}
+	label {
+		font-size: 30px;
+	}
+	
 }

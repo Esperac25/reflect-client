@@ -10,12 +10,11 @@ export default class Add extends Component{
     state = {
         error: null,
         newReflection: {},
-        datecreated: '',
     };
 
     handleChange(e){
         this.setState({ 
-            newReflection: {...this.state.newReflection, datecreated: new Date(), [e.target.name]: e.target.value},
+            newReflection: {...this.state.newReflection, [e.target.name]: e.target.value},
         })
     }
     handleCancel = () => {
@@ -69,18 +68,18 @@ export default class Add extends Component{
                 <br></br>
                 <br></br>
                 <label htmlFor='description'>Description:</label>
-                <p>What was the main take away from today?</p>
+                <p>"What was the main take away from today?"</p>
                 <input className='input' type='text' name='description' onChange={(e) => this.handleChange(e)} required/>
                 <br></br>
                 <br></br>
                 <label htmlFor='feeling'>Feeling:</label>
-                <p>What feelings did you experience today?</p>
+                <p>"What feelings did you experience today?"</p>
                 <input className='input' type='text' name='feeling' onChange={(e) => this.handleChange(e)} required/>
                 <br></br>
                 <br></br>
                 <label htmlFor='content'>Time to Reflect:</label>
                 <br></br>
-                <input className='input-large' type='text' name='content' onChange={(e) => this.handleChange(e)} required/>
+                <textarea className='input-large' type='text' name='content' onChange={(e) => this.handleChange(e)} required/>
                 <br></br>
                 <button type='submit' onClick={this.handleCancel}>
                     Cancel

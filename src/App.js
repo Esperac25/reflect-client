@@ -11,6 +11,7 @@ import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Context from './Context';
 import ReflectionList from './Components/ReflectionList/ReflectionList';
+import ReflectionView from './Components/Reflection/ReflectionView';
 import PrivateRoute from './Utils/PrivateRoute';
 import TokenService from './services/token-service';
 import './App.css';
@@ -19,6 +20,7 @@ export default class App extends Component{
   state = {
     user: {},
     reflections: [],
+    reflection: {},
     error: null,
     setReflections: (reflections) => {
       this.setState({ reflections, error: null})
@@ -50,8 +52,24 @@ export default class App extends Component{
         }
         return res.json();
       })
-      .then(this.state.reflections)
+      .then(this.state.setReflections)
       .catch((error) => this.setState({ error }));
+    },
+    handleGetById: (id) => {
+      return fetch(`${config.API_BASE_URL}/reflections/${id}`,{
+        method: 'GET',
+        headers: { 'Content-type': 'application/json',
+                  authorization: `Bearer ${TokenService.getAuthToken()}`}
+      }).then(res => {
+        if(!res.ok){
+          throw new Error(res.status)
+        }
+        return res.json()
+      })
+      .then(result => {
+        this.setState({ reflection: result})
+      })
+      .catch(error => this.setState({ error }))
     },
     logout: () => {
       return this.setState({ reflections: [] });
@@ -68,6 +86,7 @@ export default class App extends Component{
     return (
       <Context.Provider value={this.state}>
         <div>
+        
           <Route path='/' component={NavBar}/>
           <Route exact path='/' component={LandingPage}/>
           <Route path='/about' component={About}/>
@@ -78,6 +97,7 @@ export default class App extends Component{
             <PrivateRoute path='/edit/:id' component={Edit}/>
             <PrivateRoute path='/home' component={Home}/>
             <PrivateRoute exact path='/reflections' component={ReflectionList}/>
+            <PrivateRoute exact path='/reflections/:id' component={ReflectionView}/>
           </div>
           {/* <footer>Copyright © 2021 Reflect</footer> */}
         </div>

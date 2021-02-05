@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AuthAPIService from '../../services/auth-api-service';
+import './SignUp.css';
 
 export default class SignUp extends Component{
     state={
