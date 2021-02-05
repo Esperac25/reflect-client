@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import config from '../../config';
 import Context from '../../Context';
 import TokenService from '../../services/token-service';
-import reflectImg from '../../reflectImg.jpg'
+import reflectImg from '../../reflectImg';
+
 export default class Add extends Component{
     static contextType = Context;
     state = {

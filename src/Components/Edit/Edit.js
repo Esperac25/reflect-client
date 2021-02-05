@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import config from '../../config';
 import Context from '../../Context';
 import TokenService from '../../services/token-service';
-
+import reflectImg from '../../reflectImg'
 
 export default class Edit extends Component{
     static contextType = Context;
