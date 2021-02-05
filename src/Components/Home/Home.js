@@ -10,7 +10,7 @@ export default function Home(){
                 <p>It's best to be in a quiet environment.</p>
                 <p>Take some time before you begin to tune into yourself and really think about your day.</p>
                 <p>Add a title, and optional image, a short description of your moment, feelings that you had, and then reflect, journal the moment and click submit.</p>
-                <p>Once you are ready you can begin by clicking the +Reflect tab</p>
+                <p>Once you are ready you can begin by clicking the +Reflection tab</p>
             </section>
         </div>
     )
