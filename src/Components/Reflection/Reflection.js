@@ -26,7 +26,7 @@ export default class Reflection extends Component{
                         <section>
                             <div>
                                 <p>I am feeling:</p><p>"{this.props.feeling}"</p>
-                                <p>{this.props.content}</p>
+                                <p className='content'>{this.props.content}</p>
                             </div>
                             <Link to={`/edit/${this.props.id}`}>
                                 <button>Edit</button>
