@@ -30,7 +30,7 @@ img {
 @media all and (min-width: 700px) {
 	.tile {
 		width: 550px;
-		height: 430px;
+		height: 50%;
 		margin-right: 150px;
 	}
 	.tile h2 {

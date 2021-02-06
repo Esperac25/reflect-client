@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import AuthAPIService from '../../services/auth-api-service';
 import Context from '../../Context';
 import TokenService from '../../services/token-service';
-import Demo from '../Demo/Demo'
 import './Login.css';
 
 export default class SignUp extends Component{
@@ -32,7 +31,7 @@ export default class SignUp extends Component{
         return(
             <form className='form' onSubmit={this.handleLogin}>
                 {this.state.error && <p className='error'>{this.state.error}</p>}
-                <Demo history={this.props.history}/>
+                
                 <h1>Login</h1>
                 <label htmlFor='email'>Email: </label>
                 <br></br>

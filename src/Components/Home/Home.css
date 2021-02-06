@@ -2,7 +2,8 @@
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.336);
     font-weight: bold;
-    color: black;
+    color: teal;
+    text-shadow: 1px 2px black;
     font-size: 20px;
 }
 h2{
@@ -18,11 +19,11 @@ h2{
         margin-top: 250px;
         margin-right: -100px;
         width: 670px;
-        height: 630px;
+        height: 670px;
         font-size: 25px;
         margin-bottom: 100px;
     }
     h2{
-        font-size: 40px;
+        font-size: 50px;
     }
 }

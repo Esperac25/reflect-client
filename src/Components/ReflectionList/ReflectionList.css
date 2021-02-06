@@ -1,7 +1,6 @@
 .dash-h2{
     font-size: 30px;
     padding-top: 20px;
-    color: rgb(19, 97, 23);
 }
 
 .reflection-box{
@@ -15,7 +14,7 @@
 
 @media all and (min-width: 700px){
     .dash-h2{
-        font-size: 40px;
+        font-size: 50px;
     }
     .reflection-box{
         display: flex; 

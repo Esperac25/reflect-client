@@ -10,11 +10,12 @@ export default class Add extends Component{
     state = {
         error: null,
         newReflection: {},
+        image_url: '',
     };
 
     handleChange(e){
         this.setState({ 
-            newReflection: {...this.state.newReflection, [e.target.name]: e.target.value},
+            newReflection: {...this.state.newReflection, image_url: e.target.value , [e.target.name]: e.target.value},
         })
     }
     handleCancel = () => {
@@ -64,7 +65,7 @@ export default class Add extends Component{
                 <br></br>
                 <label htmlFor='image_url'>Add a picture:</label>
                 <br></br>
-                <input className='input' name='image_url' type='text' onChange={(e) => this.handleChange(e)}/>
+                <input className='input' name='image_url' value={this.state.image_url} type='text' onChange={(e) => this.handleChange(e)}/>
                 <br></br>
                 <br></br>
                 <label htmlFor='description'>Description:</label>

@@ -28,9 +28,9 @@ li{
         margin-left: 450px;
     }
     .reflection img{
-        width: 900px;
-        height: 400px;
-        margin-left: 70px;
+        width: 70%;
+        height: 50%;
+        margin-left: 150px;
     }
     .reflection h2{
         font-size: 50px;
@@ -38,6 +38,16 @@ li{
     .reflection p {
         font-size: 27px;
         text-shadow: 1px 1px rgb(245, 238, 238);
+    }
+    .reflection h3{
+        font-size: 35px;
+        color: teal;
+        text-shadow: 1px 2px black;
+    }
+    .reflection h4{
+        font-size: 30px;
+        color: teal;
+        text-shadow: 1px 2px black;
     }
     .content{
         text-indent: 50px;

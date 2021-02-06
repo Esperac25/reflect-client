@@ -22,10 +22,10 @@ export default class Reflection extends Component{
                         <span className='date'>
                             {moment(this.props.dateCreated).calendar()}
                         </span>
-                        <p>"{this.props.description}"</p>
+                        <h3>"{this.props.description}"</h3>
                         <section>
                             <div>
-                                <p>I am feeling:</p><p>"{this.props.feeling}"</p>
+                                <h4>"{this.props.feeling}"</h4>
                                 <p className='content'>{this.props.content}</p>
                             </div>
                             <Link to={`/edit/${this.props.id}`}>
