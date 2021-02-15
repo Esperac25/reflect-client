@@ -14,11 +14,11 @@
     .about-form{
         float: right;
         margin-top: 200px;
-        margin-right: 100px;
+        margin-right: 90px;
         width: 670px;
         height: 700px;
         font-size: 25px;
-        margin-bottom: 100px;
+        margin-bottom: 60px;
     }
     .about-form h1{
         color: rgba(90, 238, 70, 0.747);

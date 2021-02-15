@@ -47,12 +47,12 @@ label {
 @media all and (min-width: 700px) {
 	.add-form {
 		float: right;
-		margin-top: 250px;
-		margin-right: -100px;
+		margin-top: 200px;
+		margin-right: -120px;
 		width: 670px;
 		height: 100%;
 		font-size: 25px;
-		margin-bottom: 100px;
+		margin-bottom: 10px;
 	}
 	label {
 		font-size: 30px;

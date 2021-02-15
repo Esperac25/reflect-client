@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import moment from "moment";
-import reflectImg from "../../reflectImg.png";
+import reflectImg from "../../Images/reflectImg.png";
 import "./ReflectionTile.css";
 
 export default class ReflectionTile extends Component {

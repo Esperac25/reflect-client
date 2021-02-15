@@ -4,7 +4,7 @@ import Context from '../../Context';
 import moment from 'moment';
 import Delete from '../Delete/Delete';
 import './Reflection.css';
-import reflectImg from '../../reflectImg.png'
+import reflectImg from '../../Images/reflectImg.png'
 
 
 export default class Reflection extends Component{
@@ -26,7 +26,7 @@ export default class Reflection extends Component{
                         <h3>"{this.props.description}"</h3>
                         <section>
                             <div>
-                                <h4>"{this.props.feeling}"</h4>
+                                <h4 className='feeling'>"{this.props.feeling}"</h4>
                                 <p className='content'>{this.props.content}</p>
                             </div>
                             <Link to={`/edit/${this.props.id}`}>
