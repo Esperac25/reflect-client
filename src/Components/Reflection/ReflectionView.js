@@ -24,7 +24,7 @@ export default class ReflectionView extends Component {
 				description={reflection.description}
 				feeling={reflection.feeling}
 				content={reflection.content}
-				dateCreated={reflection.dateCreated}
+				dateCreated={reflection.datecreated}
                 history={this.props.history}
 			/>
             </div>);

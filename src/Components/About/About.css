@@ -13,12 +13,12 @@
 @media all and (min-width: 700px){
     .about-form{
         float: right;
-        margin-top: 250px;
+        margin-top: 200px;
         margin-right: 100px;
         width: 670px;
         height: 700px;
         font-size: 25px;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
     .about-form h1{
         color: rgba(90, 238, 70, 0.747);

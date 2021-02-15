@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import TokenService from '../../services/token-service';
 import Context from '../../Context';
-import reflectImg2 from '../../reflectImg2.png'
+import reflectImg2 from './Images/reflectImg2.png'
 import './NavBar.css';
 
 export default class NavBar extends Component{

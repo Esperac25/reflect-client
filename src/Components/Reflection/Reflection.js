@@ -19,6 +19,7 @@ export default class Reflection extends Component{
                 <div className='reflection'>
                         <h2>{this.props.title}</h2>
                         <img src={image} alt='reflect entry'/>
+                        <br></br>
                         <span className='date'>
                             {moment(this.props.dateCreated).calendar()}
                         </span>

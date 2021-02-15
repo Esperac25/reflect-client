@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
-import config from './config';
-import NavBar from './Components/NavBar/NavBar';
-import Login from './Components/Login/Login';
-import SignUp from './Components/SignUp/SignUp';
-import LandingPage from './Components/LandingPage/LandingPage';
-import Add from './Components/Add/Add';
-import Edit from './Components/Edit/Edit';
-import Home from './Components/Home/Home';
-import About from './Components/About/About';
-import Context from './Context';
-import ReflectionList from './Components/ReflectionList/ReflectionList';
-import ReflectionView from './Components/Reflection/ReflectionView';
-import PrivateRoute from './Utils/PrivateRoute';
-import TokenService from './services/token-service';
+import config from '../../config';
+import NavBar from '../NavBar/NavBar';
+import Login from '../Login/Login';
+import SignUp from '../SignUp/SignUp';
+import LandingPage from '../LandingPage/LandingPage';
+import Add from '../Add/Add';
+import Edit from '../Edit/Edit';
+import Home from '../Home/Home';
+import About from '../About/About';
+import Context from '../../Context';
+import ReflectionList from '../ReflectionList/ReflectionList';
+import ReflectionView from '../Reflection/ReflectionView';
+import Footer from '../Footer/Footer';
+import PrivateRoute from '../../Utils/PrivateRoute';
+import TokenService from '../../services/token-service';
 import './App.css';
 
 export default class App extends Component{
@@ -99,7 +100,9 @@ export default class App extends Component{
             <PrivateRoute exact path='/reflections' component={ReflectionList}/>
             <PrivateRoute exact path='/reflections/:id' component={ReflectionView}/>
           </div>
-          {/* <footer>Copyright © 2021 Reflect</footer> */}
+          <div>
+          <Footer/>
+          </div>
         </div>
       </Context.Provider>
     )
