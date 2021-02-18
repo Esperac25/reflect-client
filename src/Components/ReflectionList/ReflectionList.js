@@ -23,6 +23,7 @@ export default class ReflectionList extends Component{
         return reflections;
     };
 
+    
 
     render(){
         let { reflections } = this.context;
@@ -35,6 +36,12 @@ export default class ReflectionList extends Component{
         if(filter.datecreated && filter.datecreated !== 'all'){
             reflections = reflections.filter((r) => r.datecreated === filter.datecreated)
         }
+       
+        const sortFunction = (a,b) =>{  
+            var dateA = new Date(a.datecreated).getTime();
+            var dateB = new Date(b.datecreated).getTime();
+            return dateA < dateB ? 1 : -1;  
+        }; 
 
         return(
             <section className='reflection-box'>
@@ -61,7 +68,7 @@ export default class ReflectionList extends Component{
                 <section>
                 
                     <ul className='reflection-list'>
-                        {reflections.map((reflection) => (
+                        {reflections.sort(sortFunction).map((reflection) => (
                             <li>
                             <ReflectionTile
                                 key={reflection.id}
@@ -72,6 +79,7 @@ export default class ReflectionList extends Component{
                                 dateCreated={reflection.datecreated}
                             />
                             </li>
+                            
                         ))}
                         <br></br>
                     </ul>

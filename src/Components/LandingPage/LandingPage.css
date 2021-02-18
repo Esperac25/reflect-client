@@ -1,19 +1,19 @@
-.quote{
-    /* border: 2px solid white; */
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.336);
-    text-shadow: 2px 2px black;
-    color: teal;
+.quote {
+	/* border: 2px solid white; */
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.336);
+	text-shadow: 2px 2px black;
+	color: teal;
 }
 
-@media all and (min-width: 700px){
-    .quote{
-        float: right;
-        margin-top: 200px;
-        margin-right: 100px;
-        width: 650px;
-        height: 350px;
-        font-size: 25px;
-        margin-bottom: 20.9%;
-    }
+@media all and (max-width: 3000px) {
+	.quote {
+		float: right;
+		margin-top: 200px;
+		margin-right: 100px;
+		width: 650px;
+		height: 350px;
+		font-size: 25px;
+		margin-bottom: 20.9%;
+	}
 }
