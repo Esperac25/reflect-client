@@ -29,3 +29,15 @@ input{
         font-size: 50px;
     }
 }
+
+@media all and (min-width: 600px){
+    .form{
+        float: right;
+        margin-top: 50px;
+        margin-right: 378px;
+        width: 500px;
+        height: 630px;
+        font-size: 25px;
+       
+    }
+}

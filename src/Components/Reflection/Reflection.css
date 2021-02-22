@@ -63,3 +63,19 @@ li{
     }
     
 }
+
+@media all and (min-width: 600px){
+    .reflection{
+        display: flex;
+        flex-direction: column;
+        width: 55%;
+        margin-left: 270px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .reflection img{
+        width: 600px;
+        height: 450px;
+        margin-left: 44px;
+    }
+}

@@ -42,3 +42,14 @@
         text-align: center;
     }
 }
+
+@media all and (min-width: 600px){
+    .reflection-box{
+        display: flex; 
+        flex-direction: column;
+        width: 50%;
+        align-self: center;
+        margin-right: 320px;
+        margin-left: auto;
+    }
+}

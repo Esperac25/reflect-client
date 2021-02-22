@@ -59,3 +59,15 @@ label {
 	}
 	
 }
+
+@media all and (min-width: 600px){
+	.add-form {
+		float: right;
+		margin-top: 50px;
+		margin-right: 300px;
+		width: 670px;
+		height: 100%;
+		font-size: 25px;
+		
+	}
+}

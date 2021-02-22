@@ -6,7 +6,7 @@
 	color: teal;
 }
 
-@media all and (max-width: 3000px) {
+@media all and (min-width: 700px) {
 	.quote {
 		float: right;
 		margin-top: 200px;
@@ -15,5 +15,17 @@
 		height: 350px;
 		font-size: 25px;
 		margin-bottom: 20.9%;
+	}
+}
+
+@media all and (min-width: 600px){
+	.quote {
+		float: right;
+		margin-top: 50px;
+		margin-right: 300px;
+		width: 650px;
+		height: 350px;
+		font-size: 25px;
+		
 	}
 }

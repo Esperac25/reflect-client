@@ -27,3 +27,15 @@ h2{
         font-size: 50px;
     }
 }
+
+@media all and (min-width: 600px){
+    .h-box{
+        float: right;
+        margin-top: 50px;
+        margin-right: 300px;
+        width: 670px;
+        height: 670px;
+        font-size: 25px;
+        
+    }
+}

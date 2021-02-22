@@ -49,3 +49,11 @@ img {
 		border-radius: 10px;
 	}
 }
+
+@media all and (min-width: 600px){
+	.tile {
+		width: 550px;
+		height: 50%;
+		margin-right: -3px;
+	}
+}

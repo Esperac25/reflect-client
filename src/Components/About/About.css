@@ -26,3 +26,15 @@
     }
     
 }
+
+@media all and (min-width: 600px){
+    .about-form{
+        float: right;
+        margin-top: 50px;
+        margin-right: 300px;
+        width: 670px;
+        height: 700px;
+        font-size: 25px;
+        
+    }
+}
