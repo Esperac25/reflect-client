@@ -34,15 +34,15 @@ export default class SignUp extends Component{
                 <h1>Sign Up</h1>
                 <label htmlFor='email'>Email: </label>
                 <br></br>
-                <input type='email' name='email' required/>
+                <input htmlFor='email' type='email' name='email' required/>
                 <br></br>
                 <label htmlFor='password'>Password: </label>
                 <br></br>
-                <input type='password' name='password' required/>
+                <input htmlFor='password' type='password' name='password' required/>
                 <br></br>
                 <label htmlFor='confirmPassword'>Confirm Password:</label>
                 <br></br>
-                <input type='password' name='confirmPassword' required/>
+                <input htmlFor='confirm-password' type='password' name='confirmPassword' required/>
                 <br></br>
                 <br></br>
                 <button type='submit'>
