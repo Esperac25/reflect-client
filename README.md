@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Reflect
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## An online journal
 
-## Available Scripts
+### Link to live app: https://reflect-rbkmnsoe7-esperac25.vercel.app/
 
-In the project directory, you can run:
+## Server:
+Repo: https://github.com/Esperac25/reflect-server
+Heroku: https://reflect-server.herokuapp.com/
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Project description:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Reflect was created as my third full stack capstone for Thinkful's Engineering Immersion. Reflect is a zen journal that inspired users to pause, tune in and reflect on their moments in a deeper level. With Reflect, users can create an account, log in, view a demo, add, edit, delete and search through their Reflect entries.
 
-### `npm test`
+## Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Landing Page 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[![Screen-Shot-2021-02-22-at-9-44-10-AM.png](https://i.postimg.cc/pXKGXWxM/Screen-Shot-2021-02-22-at-9-44-10-AM.png)](https://postimg.cc/KRvr0yR0)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### About
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+[![Screen-Shot-2021-02-22-at-9-58-43-AM.png](https://i.postimg.cc/s2W1bN7m/Screen-Shot-2021-02-22-at-9-58-43-AM.png)](https://postimg.cc/gwYYZ4ML)
 
-### `npm run eject`
+### Login
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[![Screen-Shot-2021-02-22-at-9-44-23-AM.png](https://i.postimg.cc/nLrG7p8z/Screen-Shot-2021-02-22-at-9-44-23-AM.png)](https://postimg.cc/8F8vg8zQ)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Sign Up
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+[![Screen-Shot-2021-02-22-at-9-44-34-AM.png](https://i.postimg.cc/zvFg6cm6/Screen-Shot-2021-02-22-at-9-44-34-AM.png)](https://postimg.cc/Fk1zJGHV)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Home 
 
-## Learn More
+[![Screen-Shot-2021-02-22-at-9-44-55-AM.png](https://i.postimg.cc/y6jWq9gM/Screen-Shot-2021-02-22-at-9-44-55-AM.png)](https://postimg.cc/V5SznJFg)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Add Reflection
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[![Screen-Shot-2021-02-22-at-9-45-10-AM.png](https://i.postimg.cc/pTGNC2r6/Screen-Shot-2021-02-22-at-9-45-10-AM.png)](https://postimg.cc/JDkd4CbN)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Reflection list
 
-### Analyzing the Bundle Size
+[![Screen-Shot-2021-02-22-at-9-45-26-AM.png](https://i.postimg.cc/fbbkRRGH/Screen-Shot-2021-02-22-at-9-45-26-AM.png)](https://postimg.cc/WdQs9Tbr)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Search Results
 
-### Making a Progressive Web App
+[![Screen-Shot-2021-02-22-at-9-47-58-AM.png](https://i.postimg.cc/DfpJJLvq/Screen-Shot-2021-02-22-at-9-47-58-AM.png)](https://postimg.cc/bdbN4G2J)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Edit Reflection
 
-### Advanced Configuration
+[![Screen-Shot-2021-02-22-at-9-47-44-AM.png](https://i.postimg.cc/HnbkhcML/Screen-Shot-2021-02-22-at-9-47-44-AM.png)](https://postimg.cc/H8smJLBG)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+### Technology Used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    Front-End: React.js, HTML5, CSS3
+    Back-End: PostgreSQL, Express.js, Node.js, Chai, Mocha
